@@ -1,0 +1,98 @@
+.trending {
+    margin-top: 320px;
+
+    &__info {
+        display: flex;
+        
+        align-items: center;
+        justify-content: space-between;
+
+        h2 {
+            color: #000;
+            font-family: Playfair Display;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 50px;
+        }
+
+        a {
+            color: #FB8F1D;
+            font-family: Inter;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 60px;
+        }
+    }
+
+
+    &__content {
+        display: flex;
+        margin-top: 54px;
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__items {
+        position: relative;
+
+        .trending-text {
+            bottom: -112px;
+            position: absolute;
+            background: #fff;
+            max-width: 266px;
+
+            h3 {
+                color: #000;
+                font-family: Inter;
+                font-size: 19px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 30px;
+                padding-top: 13px;
+                padding-right: 42px;
+            }
+
+            p {
+                color: #7D7987;
+                font-family: Inter;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px;
+                padding-top: 13px;
+                padding-bottom: 23px;
+            }
+
+            a {
+                color: #FB8F1D;
+                font-family: Inter;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 28px;
+
+            }
+        }
+
+        
+
+        .trending__img {
+            img {
+                border-radius: 10px 10px 0 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .trending__items {
+        padding-top: 170px;
+    }
+    .trending__items:first-child{
+        padding-top: 20px;
+    
+    }
+}
